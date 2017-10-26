@@ -1,4 +1,4 @@
-from com.perceptron.learn_function import Perceptron
+from com.perceptron.perceptron import Perceptron
 
 
 def f(x):

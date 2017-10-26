@@ -26,8 +26,6 @@ class Perceptron(object):
         # 变成[(x1,w1),(x2,w2),(x3,w3),...]
         # 然后利用map函数计算[x1*w1, x2*w2, x3*w3]
         # 最后利用reduce求和
-        # print(input_vec)
-        # print(len(self.weights))
         reduce_list = [input_vec[i] * self.weights[i] for i in range(len(self.weights))]
         return self.activator(reduce((lambda a, b: a + b), reduce_list, 0.0) + self.bias)
 
